@@ -141,3 +141,5 @@ def remove_all_comments(lines):
 lines = read_file('sample.php')
 clean_code = remove_all_comments(lines)
 print(clean_code)
+
+#class detector
