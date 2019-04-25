@@ -1,6 +1,6 @@
 PHP Class parser > Start reading from first
 	Ignore Comments
-		> Get every lines as a list
+		>> Get every lines as a list
 		> Detect // in a line, and remove all lines from //(*)\n
 		> Detect /* from whole file and remove all text from /*
 														(*)
