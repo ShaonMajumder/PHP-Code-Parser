@@ -18,4 +18,9 @@
 		>> First Detect and save Class, remove class from Source
 		>> Then Detect and save Independent Function, remove function from Source
 		>> Then Identify Doc String in second line with  /*/// ///*/ and take text inside it and register it as object descriptor.
-		>> Register
+		> Give a Track Flag to doc string so that it can choose which object to register
+		> Detect Docstring
+		> Register
+
+	## Issues
+		Docstring is not removing by remove_all_comments()

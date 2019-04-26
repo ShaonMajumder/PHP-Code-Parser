@@ -162,4 +162,5 @@ def return_class(string):
 lines = read_file('sample.php')
 lines = remove_all_comments(lines)
 string = ''.join(lines)
-print(return_class(string))
+print(string)
+#print(return_class(string))

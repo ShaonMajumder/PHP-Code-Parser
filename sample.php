@@ -11,7 +11,7 @@ $result = $MySquery->delete("post_keys","`postkey` = 'gdgr'");
 */
 
 class MyQueries {
-/*///
+/*///<register_to_hub>
 Description:::
 Provide functionalities and option for quering mysql database without remembering complex string formats.
 Usage:::
