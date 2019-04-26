@@ -1,6 +1,4 @@
 <?php
-6//a/*
-//a/*
 /*
 Usage::
 $MySquery = new MyQueries($conn);
@@ -10,12 +8,21 @@ $result = $MySquery->insert('data', array('resource_url','read_count','postkey')
 $result = $MySquery->edit('data',array('read_count','postkey'),array('0','518swb'),"`title` = 'switch to tab id chrome.tabs - Google Search'");
 
 $result = $MySquery->delete("post_keys","`postkey` = 'gdgr'");
-*/dfs/* This is another 
-liine2
-*/7786/*757568*/hello
+*/
 
 class MyQueries {
-	//private $conn;
+/*///
+Description:::
+Provide functionalities and option for quering mysql database without remembering complex string formats.
+Usage:::
+$MySquery = new MyQueries($conn);
+
+$result = $MySquery->insert('data', array('resource_url','read_count','postkey'), array('url','0','gdfg'));
+
+$result = $MySquery->edit('data',array('read_count','postkey'),array('0','518swb'),"`title` = 'switch to tab id chrome.tabs - Google Search'");
+
+$result = $MySquery->delete("post_keys","`postkey` = 'gdgr'");
+///*/
  
 	function __construct(mysqli $conn) {
 		$this->conn = $conn;
@@ -55,6 +62,7 @@ class MyQueries {
 		$sql = "UPDATE `{$data}` SET {$param_string} WHERE {$condition}";
 		$result = $this->conn->query($sql);
 		return $result;
+		//echo "(({{}}}";
 	}
 }
 ?>
